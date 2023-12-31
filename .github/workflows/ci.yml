@@ -1,0 +1,13 @@
+name: GitHub Action to Build and Deploy React app to AWS S3
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build
+      run: |
+        yarn
+        yarn build
