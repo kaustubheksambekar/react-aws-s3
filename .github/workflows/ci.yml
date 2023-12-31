@@ -10,6 +10,6 @@ jobs:
     steps:
     - name: Build
       run: |
-        pwd
+        cd ..
         yarn
         yarn build
