@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - development
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -24,4 +23,4 @@ jobs:
           aws-region: us-east-1
     - name: Deploy to S3
       run:
-        aws s3 sync . s3://kaustubh-static-hosting --delete
+        aws s3 sync build/ s3://kaustubh-static-hosting --delete
