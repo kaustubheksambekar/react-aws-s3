@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Static Hosting AWS S3
+          Static Hosting AWS S3 with auto deployment
         </p>
       </header>
     </div>
